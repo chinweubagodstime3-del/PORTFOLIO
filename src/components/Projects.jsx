@@ -17,8 +17,7 @@ const projects = [
     description:
       "An event platform where organisers can create and manage events while customers can explore events and purchase tickets.",
     technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
-    // Add Nairabox's live link when you publish it.
-    link: "",
+    link: "https://nairabox.vercel.app/",
     source: "",
   },
 ];
@@ -59,20 +58,14 @@ function Projects() {
             </div>
 
             <div className="project-actions">
-              {project.link ? (
-                <a
-                  href={project.link}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project ↗
-                </a>
-              ) : (
-                <span className="project-link project-unavailable">
-                  Coming Soon
-                </span>
-              )}
+              <a
+                href={project.link}
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
 
               {project.source && (
                 <a
